@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-white text-black transition-colors duration-300;
+  }
+
+  html.dark {
+    @apply bg-hackerBlack text-white;
+  }
+}
+
+.ProseMirror {
+  @apply p-4 min-h-[400px] box-border whitespace-pre-wrap text-white;
+}
+
+.ProseMirror ul {
+  @apply list-disc ml-5 text-white;
+}
+
+.ProseMirror ol {
+  @apply list-decimal ml-5 text-white;
+}
+
+.ProseMirror li {
+  @apply mb-1;
+}
